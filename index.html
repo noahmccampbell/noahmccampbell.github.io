@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seaotic Website</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <script src="scriptback.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/gps4kro.css">
+    </head>
+    <body>
+		<div class="toolBar">
+			<img src="sealogo.png">
+            
+			<a href="#About">About</a>
+			<a href="#Home">Home</a>
+            <a href="#Projects">Feed</a>
+        </div>
+        <div class="mainFeed"></div>
+			<div id="Home">
+					<h1>Seaotic</h1>
+					<img src="SeaoticlogoPCrop.png" width="300">
+			</div>
+			<div id="About">
+
+					<h1>About</h1>
+					<p>This site is for developers and different ways for beginners to get started with programming.</p>
+
+			</div>
+			<div id="Projects">
+				<h1>Feed:</h1>
+				<h1>An idea for a quick HTML, CSS, and JS project:</h1>
+				<p>Try to make a simple multiplication, division, substraction, and addition calculator, a challenge for this would be to try to make a sqrt() button or other more complex buttons for the calculator.(If you need help use the inspect tool)</p>
+				<div class="Calculator">
+					
+					<textarea id="Textview"></textarea>
+					<table class="buttontb">
+						<tr>
+							<td><button onclick="maincalc('CE')">C</button></td>
+							<td><button onclick="maincalc('-')">-</button></td>
+							<td><button onclick="maincalc('/')">/</button></td>
+							<td><button onclick="maincalc('*')">X</button></td>
+						</tr>
+
+						<tr>	
+							<td><button onclick="maincalc(1)">1</button></td>
+							<td><button onclick="maincalc(2)">2</button></td>
+							<td><button onclick="maincalc(3)">3</button></td>
+							<td><button onClick="maincalc('+')">+</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="maincalc(4)">4</button></td>
+							<td><button onclick="maincalc(5)">5</button></td>
+							<td><button onclick="maincalc(6)">6</button></td>
+							<td><button onclick="maincalc('-')">-</button></td>
+						</tr>
+						<tr>
+							<td><button onclick="maincalc(7)">7</button></td>
+							<td><button onclick="maincalc(8)">8</button></td>
+							<td><button onclick="maincalc(9)">9</button></td>
+							<td><button onClick="equal()">=</button></td>
+						</tr>
+						<tr>
+							<td><button onClick="maincalc(0)">0</button></td>
+							<td><button onClick="maincalc('.')">.</button></td>
+						</tr>
+					</table>
+				</div>
+		</div>
+	
+    </body>
+	
+
+</html>
