@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <script>
+        function show(){
+            var inputText = document.getElementById("editor-input").value;
+            document.getElementById("output").srcdoc = inputText;
+        }
+        
+        </script>
+        <style>
+            body, html{
+                background-image: linear-gradient(to bottom right, grey, #29d4d2);
+                height: 100%;
+            }
+            .container{
+                margin: auto;
+                width: 50%;
+              
+            }
+            #editor-input{
+                height: 500px;
+                width: 400px;
+                margin-top: 100px;
+                margin-right: 10px;
+            }
+            #output{
+                height: 505px;
+                width: 400px;
+                background-color: white;
+                border: none;
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="toolBar">
+			<img src="sealogo.png">
+            <a href="index.html">Home</a>
+            <a href="OnlineEdit.html">Seaotic Live Editor</a>	
+        </div>
+        <h1>Live HTML, CSS, JS Code Editor</h1>
+        <div class="container">
+            <textarea id="editor-input" onkeyup="show()" placeholder="Start typing here..."></textarea>
+            
+            <iframe id="output"></iframe>
+        </div>
+    </body>
+</html>
